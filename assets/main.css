@@ -55,3 +55,15 @@ li{
     padding-top: 5vh ;
   }
 }
+.fa-instagram:hover{
+  color : #517fa4 ;
+}
+.fa-twitter:hover{
+  color : #55acee ;
+}
+.fa-github:hover{
+  color : #333 ;
+}
+.fa-envelope:hover{
+  color : #b23121 ;
+}
