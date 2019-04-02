@@ -38,7 +38,9 @@ a{
   color: white ;
 }
 p a:hover{
-    text-decoration:underline ;
+    color : white ;
+    text-decoration: none ;
+    border-bottom:2px solid white  ;
 }
 li{
 
@@ -76,11 +78,8 @@ li{
     p{
         font-size:10rem ;
     }
+    li a{
+        font-size: 7rem ;
+    }
 
-  .first{
-    padding-top: 0vh ;
-  }
-  .second{
-    padding-top: 5vh ;
-  }
 }
