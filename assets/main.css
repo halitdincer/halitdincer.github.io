@@ -108,6 +108,9 @@ a{
     p{
         font-size:10rem ;
     }
+    .sub-title{
+      font-size: 5rem ;
+    }
     li a{
         font-size: 7rem ;
     }
