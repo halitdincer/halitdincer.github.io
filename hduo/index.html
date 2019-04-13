@@ -1,0 +1,24 @@
+<html>
+
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body onload="showMyFace()">
+
+    <div class="fullscreen">
+
+      <video id="friendsVideo" class="othercam" autoplay playsinline></video>
+      <button id="callbutton" onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg">Call</button>
+
+      <video id="yourVideo" class="mycam" autoplay muted playsinline></video>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

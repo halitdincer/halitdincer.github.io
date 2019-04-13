@@ -1,0 +1,47 @@
+video {
+  height: 100% ;
+  width: 100% ;
+  background-color: #151515;
+}
+#yourvideo{
+  position: absolute;
+  right : 5vh ;
+  bottom : 5vh ;
+
+  max-width: 30vh ;
+  max-height: 30vh ;
+
+  border-radius: 20px ;
+
+  object-fit: cover ;
+}
+#friendsVideo{
+  margin-left: auto;
+  margin-right: auto;
+  display: block ;
+}
+.fullscreen{
+  background : #000 ;
+  height: 100vh;
+  width: 100% ;
+}
+button {
+
+  position: absolute ;
+  left : 48% ;
+  top : 50vh ;
+
+  width: 100px;
+  height : 75px ;
+
+  margin: 5px 0px 0px 10px !important;
+  border-radius: 500px !important ;
+  padding : 25px !important ;
+
+}
+@media only screen and (max-width: 1000px) {
+  #yourvideo{
+    max-width: 20vh ;
+    max-height: 20vh ;
+  }
+}
