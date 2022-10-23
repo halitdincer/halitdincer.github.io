@@ -22,12 +22,13 @@
       <section class="header-img"></section>
     </header>
     <main>
-      <section id="about-me">
-        <h2>Hi / Merhaba, <br> I'm Halit - a CS student at TMU and freelance developer in Toronto.</h2>
-        <p>I code bunch of interesting <a href="/projects">projects</a> in my free time.</p>
-        <p>I share what I read, watch and think in my <a href="/post_list.html">blog</a>.</p>
-        <p>I did custom websites and web apps for businesses at my <a href="/work">freelance work</a>.</p>
-      </section>
+      {% for post in site.posts %}
+        <div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </hr>
+      {% endfor%}
     </main>
     <footer>
       <section id="contact-info-section">
