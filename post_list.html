@@ -1,3 +1,6 @@
+---
+permalink: /blog/
+---
 <html>
   <head>
     <title> Halit Dincer </title>
@@ -22,13 +25,13 @@
       <section class="header-img"></section>
     </header>
     <main>
-      {% for post in site.posts %}
-        <div>
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt }}</p>
-        </div>
-      </hr>
-      {% endfor%}
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </main>
     <footer>
       <section id="contact-info-section">
@@ -37,7 +40,7 @@
     </footer>
 
 unsplash_key    <script>
-      var    = process.env.UNSPLASH_API_KEY;
+      var unsplash_key= process.env.UNSPLASH_API_KEY;
       document.getElementById('.header-img').style.backgroundImage="url(https://api.unsplash.com/photos/random?client_id="+unsplash_key+")"; // specify the image path here
     </script>
   </body>
