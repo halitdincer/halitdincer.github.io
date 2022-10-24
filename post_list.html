@@ -40,8 +40,14 @@ permalink: /blog/
     </footer>
 
     <script>
-      var unsplash_key= process.env.UNSPLASH_API_KEY;
-      document.getElementByID('header-img').style.backgroundImage="url(https://api.unsplash.com/photos/random?client_id="+unsplash_key+")"; // specify the image path here
+      var req = new XMLHttpRequest();
+      req.overrideMimeType("application/json");
+      req.open('GET', "https://api.unsplash.com/photos/random?client_id=3RlvbFogGNcfAFw6skH3vnQvMKXi9ZBWi6DWdJ5E4Nw&orientation=landscape", true);
+      req.onload  = function() {
+        var jsonResponse = JSON.parse(req.responseText);
+        document.getElementById('header-img').style.backgroundImage="url("+jsonResponse['urls']['full']+")"; // specify the image path here
+      };
+      req.send(null);
     </script>
   </body>
 </html>
