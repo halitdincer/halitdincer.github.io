@@ -2,49 +2,32 @@
   <head>
     <title> Halit Dincer </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   
   </head>
   <body>
     <header>
       <nav>
-        <a href="../">Home</a>
-        <a href="https://github.com/halitdincer">Projects</a>
-        <a href="https://creatizex.com">Portfolio</a>
-        <a href="https://github.com/halitdincer">Blog</a>
+        <a class="active" href="#">Home</a>
+        <a href="https://github.com/halitdincer" target="_blank">Projects</a>
       </nav>
-      <section id="header-img"></section>
     </header>
     <main>
       <section id="about-me">
-        <h2>Hi / Merhaba, <br> I'm Halit - a CS student at TMU and freelance developer in Toronto.</h2>
-        <p>I code bunch of interesting <a href="https://github.com/halitdincer">projects</a> in my free time.</p>
-        <p>I share what I read, watch and think in my <a href="https://github.com/halitdincer">blog</a>.</p>
-        <p>I did custom websites and web apps for businesses at my <a href="https://creatizex.com">freelance work</a>.</p>
+        <h1>Hi / Merhaba<br></h1>
+        <p>I'm Halit, a third-year CS student at Toronto Metropolitan University. I started my coding journey back in high school which is adding up to almost nine years now.</p>
+        <p>As a freelancer, I've specialized in web and mobile development, but recently, I've also started getting into machine learning and AI, drawn in by all the new exciting and cool stuff that's been coming out!</p>
+        <p>My free time is filled with personal projects that let me explore, fail, and learn.</p>
+        <p>If you want, feel free to reach me out <a href="mailto:halit.dincer@torontomu.ca">here</a>!</p>
       </section>
     </main>
-    <footer>
-      <section id="contact-info-section">
-        <p>If you want to reach out to me, you can <a href="mailto:contact@halitdincer.com">email</a>.</p>
-      </section>
-    </footer>
-
-    <script>
-      var req = new XMLHttpRequest();
-      req.overrideMimeType("application/json");
-      req.open('GET', "https://api.unsplash.com/photos/random?client_id=3RlvbFogGNcfAFw6skH3vnQvMKXi9ZBWi6DWdJ5E4Nw&orientation=landscape", true);
-      req.onload  = function() {
-        var jsonResponse = JSON.parse(req.responseText);
-        document.getElementById('header-img').style.backgroundImage="url("+jsonResponse['urls']['full']+")"; // specify the image path here
-      };
-      req.send(null);
-    </script>
 
   </body>
 </html>
